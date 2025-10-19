@@ -14,8 +14,8 @@ const Hero = () => {
     <section id="accueil" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-primary-400/20 to-accent-400/20 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-tr from-accent-400/20 to-primary-400/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-primary-400/20 to-primary-600/20 rounded-full blur-3xl animate-float"></div>
+        
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -119,9 +119,9 @@ const Hero = () => {
             <div className="relative">
               {/* Main Circle */}
               <div className="w-80 h-80 glass-card rounded-full flex items-center justify-center relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary-500/20 to-accent-500/20 rounded-full"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-primary-500/20 to-primary-700/20 rounded-full"></div>
                 <div className="relative z-10 text-center">
-                  <div className="w-32 h-32 bg-gradient-to-br from-primary-500 to-accent-500 rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <div className="w-32 h-32 bg-gradient-to-br from-primary-500 to-primary-700 rounded-full mx-auto mb-4 flex items-center justify-center">
                     <span className="text-6xl font-bold text-white">VV</span>
                   </div>
                   <h3 className="text-2xl font-bold gradient-text">Victor Voyer</h3>
@@ -131,8 +131,8 @@ const Hero = () => {
 
               {/* Floating Elements */}
               <div className="absolute -top-4 -right-4 w-16 h-16 bg-gradient-to-br from-primary-400 to-primary-600 rounded-full animate-float"></div>
-              <div className="absolute -bottom-4 -left-4 w-12 h-12 bg-gradient-to-br from-accent-400 to-accent-600 rounded-full animate-float" style={{ animationDelay: '1s' }}></div>
-              <div className="absolute top-1/2 -left-8 w-8 h-8 bg-gradient-to-br from-primary-300 to-accent-300 rounded-full animate-float" style={{ animationDelay: '2s' }}></div>
+              <div className="absolute -bottom-4 -left-4 w-12 h-12 bg-gradient-to-br from-primary-600 to-primary-800 rounded-full animate-float" style={{ animationDelay: '1s' }}></div>
+              <div className="absolute top-1/2 -left-8 w-8 h-8 bg-gradient-to-br from-primary-300 to-primary-500 rounded-full animate-float" style={{ animationDelay: '2s' }}></div>
             </div>
           </motion.div>
         </div>

@@ -17,7 +17,6 @@ const Header = () => {
     { name: 'Accueil', href: '#accueil' },
     { name: 'À propos', href: '#apropos' },
     { name: 'Compétences', href: '#competences' },
-    { name: 'Parcours', href: '#parcours' },
     { name: 'Projets', href: '#projets' },
     { name: 'Contact', href: '#contact' }
   ]
@@ -50,10 +49,10 @@ const Header = () => {
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className="text-gray-700 hover:text-primary-600 font-medium transition-colors duration-300 relative group"
+                  className="text-gray-300 hover:text-primary-400 font-medium transition-colors duration-300 relative group"
                 >
                   {item.name}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary-600 to-accent-500 transition-all duration-300 group-hover:w-full"></span>
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary-500 to-primary-700 transition-all duration-300 group-hover:w-full"></span>
                 </button>
               ))}
             </div>
@@ -63,7 +62,7 @@ const Header = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-700 hover:text-primary-600 transition-colors duration-300"
+              className="text-gray-300 hover:text-primary-400 transition-colors duration-300"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -78,7 +77,7 @@ const Header = () => {
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className="text-gray-700 hover:text-primary-600 font-medium transition-colors duration-300 text-left"
+                  className="text-gray-300 hover:text-primary-400 font-medium transition-colors duration-300 text-left"
                 >
                   {item.name}
                 </button>

@@ -26,8 +26,8 @@
 body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
-    color: var(--text-primary);
-    background-color: var(--bg-primary);
+    color: #e2e8f0;
+    background-color: #0f172a;
     scroll-behavior: smooth;
 }
 
@@ -66,7 +66,7 @@ body {
 }
 
 .logo-text {
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    background: linear-gradient(135deg, var(--primary-color), #1e40af);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -146,7 +146,7 @@ body {
 }
 
 .highlight {
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    background: linear-gradient(135deg, var(--primary-color), #1e40af);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -240,7 +240,7 @@ body {
 .image-placeholder {
     width: 300px;
     height: 300px;
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    background: linear-gradient(135deg, var(--primary-color), #1e40af);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -321,7 +321,7 @@ section {
     bottom: 0;
     background: 
         radial-gradient(circle at 20% 50%, rgba(37, 99, 235, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(245, 158, 11, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(30, 64, 175, 0.1) 0%, transparent 50%),
         radial-gradient(circle at 40% 80%, rgba(37, 99, 235, 0.05) 0%, transparent 50%);
     animation: backgroundShift 20s ease-in-out infinite;
     z-index: -1;
@@ -356,7 +356,7 @@ section {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: conic-gradient(from 0deg, transparent, rgba(37, 99, 235, 0.1), transparent, rgba(245, 158, 11, 0.1), transparent);
+    background: conic-gradient(from 0deg, transparent, rgba(37, 99, 235, 0.1), transparent, rgba(30, 64, 175, 0.1), transparent);
     animation: rotate 10s linear infinite;
     z-index: -1;
 }
@@ -424,7 +424,7 @@ section {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(245, 158, 11, 0.1));
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(30, 64, 175, 0.1));
     opacity: 0;
     transition: opacity 0.3s ease;
     z-index: -1;
@@ -495,7 +495,7 @@ section {
     position: absolute;
     top: 1rem;
     right: 1rem;
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    background: linear-gradient(135deg, var(--primary-color), #1e40af);
     color: white;
     padding: 0.5rem 0.75rem;
     border-radius: 20px;
@@ -530,19 +530,19 @@ section {
     0%, 100% { 
         background: 
             radial-gradient(circle at 20% 50%, rgba(37, 99, 235, 0.1) 0%, transparent 50%),
-            radial-gradient(circle at 80% 20%, rgba(245, 158, 11, 0.1) 0%, transparent 50%),
+            radial-gradient(circle at 80% 20%, rgba(30, 64, 175, 0.1) 0%, transparent 50%),
             radial-gradient(circle at 40% 80%, rgba(37, 99, 235, 0.05) 0%, transparent 50%);
     }
     33% { 
         background: 
-            radial-gradient(circle at 80% 30%, rgba(245, 158, 11, 0.1) 0%, transparent 50%),
+            radial-gradient(circle at 80% 30%, rgba(30, 64, 175, 0.1) 0%, transparent 50%),
             radial-gradient(circle at 20% 70%, rgba(37, 99, 235, 0.1) 0%, transparent 50%),
-            radial-gradient(circle at 60% 20%, rgba(245, 158, 11, 0.05) 0%, transparent 50%);
+            radial-gradient(circle at 60% 20%, rgba(30, 64, 175, 0.05) 0%, transparent 50%);
     }
     66% { 
         background: 
             radial-gradient(circle at 40% 20%, rgba(37, 99, 235, 0.1) 0%, transparent 50%),
-            radial-gradient(circle at 60% 80%, rgba(245, 158, 11, 0.1) 0%, transparent 50%),
+            radial-gradient(circle at 60% 80%, rgba(30, 64, 175, 0.1) 0%, transparent 50%),
             radial-gradient(circle at 80% 60%, rgba(37, 99, 235, 0.05) 0%, transparent 50%);
     }
 }
@@ -587,7 +587,7 @@ section {
 .card-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(245, 158, 11, 0.1));
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(30, 64, 175, 0.1));
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -669,7 +669,7 @@ section {
 }
 
 .card-tags span {
-    background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(245, 158, 11, 0.1));
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(30, 64, 175, 0.1));
     color: var(--primary-color);
     padding: 0.4rem 0.8rem;
     border-radius: 20px;
@@ -680,7 +680,7 @@ section {
 }
 
 .parcours-card:hover .card-tags span {
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    background: linear-gradient(135deg, var(--primary-color), #1e40af);
     color: white;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(37, 99, 235, 0.3);
@@ -708,7 +708,7 @@ section {
 
 .project-image {
     height: 200px;
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    background: linear-gradient(135deg, var(--primary-color), #1e40af);
     display: flex;
     align-items: center;
     justify-content: center;

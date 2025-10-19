@@ -77,8 +77,8 @@ const Contact = () => {
     <section id="contact" className="py-20 relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-br from-primary-400/10 to-accent-400/10 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gradient-to-tr from-accent-400/10 to-primary-400/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '6s' }}></div>
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-br from-primary-400/10 to-primary-600/10 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gradient-to-tr from-primary-600/10 to-primary-400/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '6s' }}></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -112,9 +112,9 @@ const Contact = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                     transition={{ duration: 0.6, delay: 0.4 + index * 0.1 }}
-                    className="flex items-center gap-4 p-4 bg-gradient-to-r from-primary-50 to-accent-50 rounded-xl border border-primary-200 hover:shadow-lg transition-all duration-300"
+                    className="flex items-center gap-4 p-4 bg-gradient-to-r from-primary-50 to-primary-100 rounded-xl border border-primary-200 hover:shadow-lg transition-all duration-300"
                   >
-                    <div className="p-3 bg-gradient-to-r from-primary-500 to-accent-500 text-white rounded-lg">
+                    <div className="p-3 bg-gradient-to-r from-primary-500 to-primary-700 text-white rounded-lg">
                       {info.icon}
                     </div>
                     <div>
