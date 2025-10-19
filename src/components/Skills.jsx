@@ -34,8 +34,8 @@ const Skills = () => {
     { name: 'MySQL', icon: mysqlIcon, color: 'color-blue' },
     // Outils
     { name: 'VS Code', icon: vscodeIcon, color: 'color-blue' },
-    { name: 'Git', icon: gitIcon, color: 'color-gray' },
-    { name: 'GitHub', icon: githubIcon, color: 'color-gray' },
+    // { name: 'Git', icon: gitIcon, color: 'color-gray' },
+    { name: 'Git & GitHub', icon: gitIcon, icon2: githubIcon, color: 'color-gray' },
     { name: 'Figma', icon: figmaIcon, color: 'color-purple' },
     { name: 'Tailwind', icon: tailwindIcon, color: 'color-cyan' }
   ]
@@ -48,6 +48,13 @@ const Skills = () => {
           alt={skill.name}
           className="skill-icon"
         />
+        {skill.icon2 && (
+          <img 
+            src={skill.icon2} 
+            alt={`${skill.name} second`}
+            className="skill-icon skill-icon-second"
+          />
+        )}
       </div>
       <h3 className="skill-name">
         {skill.name}
