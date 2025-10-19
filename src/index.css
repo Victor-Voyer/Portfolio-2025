@@ -62,7 +62,7 @@
   }
 
   .skill-card {
-    @apply glass-card rounded-2xl p-6 transition-all duration-500 hover:transform hover:scale-105 hover:rotate-1 hover:shadow-2xl;
+    @apply glass-card rounded-2xl p-6;
   }
 
   .section-title {

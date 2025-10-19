@@ -135,4 +135,4 @@ Ce projet est sous licence MIT. Vous êtes libre de l'utiliser et de le modifier
 
 ---
 
-Fait avec ❤️ par Victor Voyer
+
