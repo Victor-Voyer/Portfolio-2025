@@ -1,6 +1,4 @@
 /* ===== SKILLS COMPONENT STYLES ===== */
-
-/* Section principale */
 .skills-section {
   padding: 100px 0;
   position: relative;
@@ -40,7 +38,6 @@
   animation-delay: 3s;
 }
 
-/* Container principal */
 .skills-container {
   max-width: 1280px;
   margin: 0 auto;
@@ -49,7 +46,6 @@
   z-index: 10;
 }
 
-/* Titre de section */
 .skills-title-container {
   text-align: center;
   margin-bottom: 80px;
@@ -69,10 +65,9 @@
   letter-spacing: -0.02em;
 }
 
-/* Grille des compétences */
 .skills-grid {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 64px;
 }
 
@@ -92,18 +87,6 @@
   overflow: hidden;
 }
 
-.skills-category-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: linear-gradient(90deg, #3b82f6, #1d4ed8, #1e40af);
-  border-radius: 32px 32px 0 0;
-}
-
-/* Titre de catégorie */
 .skills-category-title {
   font-size: 1.5rem;
   font-weight: 700;
@@ -116,7 +99,6 @@
   gap: 12px;
 }
 
-/* Grille des compétences individuelles */
 .skills-items-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
@@ -124,7 +106,6 @@
   padding: 20px 0;
 }
 
-/* Carte de compétence */
 .skill-card {
   background: linear-gradient(145deg, #ffffff, #f8fafc);
   border: 1px solid #e2e8f0;
@@ -145,7 +126,6 @@
   transform-origin: center center;
 }
 
-/* Hover des cartes */
 .skill-card:hover {
   border-color: #3b82f6;
   background: linear-gradient(145deg, #dbeafe, #ffffff);
@@ -154,7 +134,6 @@
     0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Conteneur de l'icône */
 .skill-icon-container {
   width: 80px;
   height: 80px;
@@ -166,9 +145,6 @@
   flex-shrink: 0;
 }
 
-/* Hover de l'icône supprimé */
-
-/* Image de l'icône */
 .skill-icon {
   width: 48px;
   height: 48px;
@@ -178,7 +154,6 @@
   max-height: 48px;
 }
 
-/* Nom de la compétence */
 .skill-name {
   font-size: 0.875rem;
   font-weight: 500;
@@ -188,11 +163,6 @@
   letter-spacing: -0.01em;
 }
 
-/* Hover du nom supprimé */
-
-/* Effet de survol supprimé - base saine */
-
-/* Responsive Design */
 @media (min-width: 768px) {
   .skills-items-grid {
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -285,14 +255,6 @@
   animation-delay: 0.6s;
 }
 
-/* Animation des cartes de compétences - SUPPRIMÉE */
-
-/* Délais séquentiels pour les cartes - SUPPRIMÉS */
-
-/* Animation de survol pour les cartes - SUPPRIMÉE */
-
-/* Animation de l'icône au survol - SUPPRIMÉE */
-
 /* Animation de l'effet de survol */
 .skill-hover-effect {
   transition: opacity 0.3s ease;
@@ -302,11 +264,3 @@
   opacity: 1;
 }
 
-/* Classes utilitaires pour les couleurs */
-.color-orange { color: #f97316; }
-.color-blue { color: #3b82f6; }
-.color-yellow { color: #eab308; }
-.color-cyan { color: #06b6d4; }
-.color-green { color: #22c55e; }
-.color-purple { color: #a855f7; }
-.color-gray { color: #6b7280; }
