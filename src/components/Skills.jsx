@@ -19,29 +19,26 @@ import figmaIcon from '../assets/images/icons/Figma.png'
 import tailwindIcon from '../assets/images/icons/Tailwind.png'
 
 const Skills = () => {
-  const skills = {
-    frontend: [
-      { name: 'HTML', icon: htmlIcon, color: 'color-orange' },
-      { name: 'CSS', icon: cssIcon, color: 'color-blue' },
-      { name: 'JavaScript', icon: jsIcon, color: 'color-yellow' },
-      { name: 'React', icon: reactIcon, color: 'color-cyan' }
-    ],
-    backend: [
-      { name: 'Node.js', icon: nodeIcon, color: 'color-green' },
-      { name: 'PHP', icon: phpIcon, color: 'color-purple' },
-      { name: 'Symfony', icon: symfonyIcon, color: 'color-gray' },
-      { name: 'API', icon: apiIcon, color: 'color-blue' },
-      { name: 'PostgreSQL', icon: postgresIcon, color: 'color-blue' },
-      { name: 'MySQL', icon: mysqlIcon, color: 'color-blue' }
-    ],
-    tools: [
-      { name: 'VS Code', icon: vscodeIcon, color: 'color-blue' },
-      { name: 'Git', icon: gitIcon, color: 'color-gray' },
-      { name: 'GitHub', icon: githubIcon, color: 'color-gray' },
-      { name: 'Figma', icon: figmaIcon, color: 'color-purple' },
-      { name: 'Tailwind', icon: tailwindIcon, color: 'color-cyan' }
-    ]
-  }
+  const allSkills = [
+    // Front-end
+    { name: 'HTML', icon: htmlIcon, color: 'color-orange' },
+    { name: 'CSS', icon: cssIcon, color: 'color-blue' },
+    { name: 'JavaScript', icon: jsIcon, color: 'color-yellow' },
+    { name: 'React', icon: reactIcon, color: 'color-cyan' },
+    // Back-end
+    { name: 'Node.js', icon: nodeIcon, color: 'color-green' },
+    { name: 'PHP', icon: phpIcon, color: 'color-purple' },
+    { name: 'Symfony', icon: symfonyIcon, color: 'color-gray' },
+    { name: 'API', icon: apiIcon, color: 'color-blue' },
+    { name: 'PostgreSQL', icon: postgresIcon, color: 'color-blue' },
+    { name: 'MySQL', icon: mysqlIcon, color: 'color-blue' },
+    // Outils
+    { name: 'VS Code', icon: vscodeIcon, color: 'color-blue' },
+    { name: 'Git', icon: gitIcon, color: 'color-gray' },
+    { name: 'GitHub', icon: githubIcon, color: 'color-gray' },
+    { name: 'Figma', icon: figmaIcon, color: 'color-purple' },
+    { name: 'Tailwind', icon: tailwindIcon, color: 'color-cyan' }
+  ]
 
   const SkillCard = ({ skill }) => (
     <div className="skill-card">
@@ -55,63 +52,23 @@ const Skills = () => {
       <h3 className="skill-name">
         {skill.name}
       </h3>
-
-      {/* Effet de survol */}
-      <div className="skill-hover-effect" />
     </div>
   )
 
   return (
     <section id="competences" className="skills-section">
-      {/* Effets de fond */}
-      <div className="skills-background-effects">
-        <div className="skills-background-blob-1" />
-        <div className="skills-background-blob-2" />
-      </div>
 
       <div className="skills-container">
         <div className="skills-title-container skills-fade-in">
           <h2 className="skills-title">Mes Compétences</h2>
         </div>
 
-        <div className="skills-grid">
-          {/* Frontend */}
-          <div className="skills-category-card skills-fade-in skills-fade-in-delay-1">
-            <h3 className="skills-category-title">
-              <span>🎨</span>
-              Front-end
-            </h3>
-            <div className="skills-items-grid">
-              {skills.frontend.map((skill, index) => (
-                <SkillCard key={index} skill={skill} />
-              ))}
-            </div>
-          </div>
-
-          {/* Backend */}
-          <div className="skills-category-card skills-fade-in skills-fade-in-delay-2">
-            <h3 className="skills-category-title">
-              <span>⚙️</span>
-              Back-end
-            </h3>
-            <div className="skills-items-grid">
-              {skills.backend.map((skill, index) => (
-                <SkillCard key={index + 4} skill={skill} />
-              ))}
-            </div>
-          </div>
-
-          {/* Tools */}
-          <div className="skills-category-card skills-fade-in skills-fade-in-delay-3">
-            <h3 className="skills-category-title">
-              <span>🛠️</span>
-              Outils
-            </h3>
-            <div className="skills-items-grid">
-              {skills.tools.map((skill, index) => (
-                <SkillCard key={index + 10} skill={skill} />
-              ))}
-            </div>
+        <div className="skills-category-card skills-fade-in skills-fade-in-delay-1">
+          
+          <div className="skills-items-grid">
+            {allSkills.map((skill, index) => (
+              <SkillCard key={index} skill={skill} />
+            ))}
           </div>
         </div>
       </div>
