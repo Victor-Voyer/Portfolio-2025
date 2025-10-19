@@ -33,7 +33,7 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6"
             >
-              <span className="text-gray-900">Bonjour, je suis</span>
+              <span className="text-gray-100">Bonjour, je suis</span>
               <br />
               <span className="gradient-text">Victor Voyer</span>
             </motion.h1>
@@ -42,7 +42,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-2xl md:text-3xl text-gray-600 mb-4 font-medium"
+              className="text-2xl md:text-3xl text-blue-400 mb-4 font-medium"
             >
               Développeur - Intégrateur Web
             </motion.p>
@@ -51,7 +51,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
-              className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed"
+              className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed"
             >
               Motivé et adaptable, je suis passionné par l'intégration web et déterminé à créer des interfaces esthétiques et fonctionnelles. Toujours prêt à apprendre, je m'adapte rapidement aux évolutions technologiques.
             </motion.p>
@@ -88,23 +88,23 @@ const Hero = () => {
                 href="https://github.com/Victor-Voyer"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 glass rounded-full hover:bg-white/30 transition-all duration-300 transform hover:scale-110"
+                className="p-3 glass rounded-full hover:bg-white/20 transition-all duration-300 transform hover:scale-110"
               >
-                <Github className="w-6 h-6 text-gray-700" />
+                <Github className="w-6 h-6 text-gray-200" />
               </a>
               <a
                 href="https://www.linkedin.com/in/victor-voyer"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 glass rounded-full hover:bg-white/30 transition-all duration-300 transform hover:scale-110"
+                className="p-3 glass rounded-full hover:bg-white/20 transition-all duration-300 transform hover:scale-110"
               >
-                <Linkedin className="w-6 h-6 text-gray-700" />
+                <Linkedin className="w-6 h-6 text-gray-200" />
               </a>
               <a
                 href="mailto:victor.voyer@outlook.fr"
-                className="p-3 glass rounded-full hover:bg-white/30 transition-all duration-300 transform hover:scale-110"
+                className="p-3 glass rounded-full hover:bg-white/20 transition-all duration-300 transform hover:scale-110"
               >
-                <Mail className="w-6 h-6 text-gray-700" />
+                <Mail className="w-6 h-6 text-gray-200" />
               </a>
             </motion.div>
           </motion.div>
@@ -121,11 +121,15 @@ const Hero = () => {
               <div className="w-80 h-80 glass-card rounded-full flex items-center justify-center relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary-500/20 to-primary-700/20 rounded-full"></div>
                 <div className="relative z-10 text-center">
-                  <div className="w-32 h-32 bg-gradient-to-br from-primary-500 to-primary-700 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-6xl font-bold text-white">VV</span>
+                  <div className="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden border-4 border-white/20 shadow-2xl">
+                    <img 
+                      src="/src/assets/images/profile/jiraiya.jpg" 
+                      alt="Victor Voyer" 
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <h3 className="text-2xl font-bold gradient-text">Victor Voyer</h3>
-                  <p className="text-gray-600">Développeur Web</p>
+                  <p className="text-gray-700">Développeur Web</p>
                 </div>
               </div>
 
@@ -147,9 +151,9 @@ const Hero = () => {
       >
         <button
           onClick={scrollToAbout}
-          className="p-2 glass rounded-full hover:bg-white/30 transition-all duration-300 animate-bounce"
+          className="p-2 glass rounded-full hover:bg-white/20 transition-all duration-300 animate-bounce"
         >
-          <ChevronDown className="w-6 h-6 text-gray-700" />
+          <ChevronDown className="w-6 h-6 text-gray-200" />
         </button>
       </motion.div>
     </section>

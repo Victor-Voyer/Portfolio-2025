@@ -58,7 +58,7 @@
   }
 
   .btn-secondary {
-    @apply bg-white/20 backdrop-blur-md border border-white/30 hover:bg-white/30 text-primary-600 font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg;
+    @apply bg-white/10 backdrop-blur-md border border-blue-400/50 hover:bg-blue-500/20 hover:border-blue-400 text-blue-400 font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25;
   }
 
   .skill-card {
