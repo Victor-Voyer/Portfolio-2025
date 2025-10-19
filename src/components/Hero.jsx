@@ -1,10 +1,10 @@
 import React from 'react'
-import { motion } from 'framer-motion'
 import { Github, Linkedin, Mail, ChevronDown } from 'lucide-react'
+import '../styles/Hero.css'
 
 const Hero = () => {
-  const scrollToAbout = () => {
-    const element = document.querySelector('#apropos')
+  const scrollToSkills = () => {
+    const element = document.querySelector('#competences')
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' })
     }
@@ -21,48 +21,22 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-center lg:text-left"
-          >
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6"
-            >
-              <span className="text-gray-100">Bonjour, je suis</span>
-              <br />
-              <span className="gradient-text">Victor Voyer</span>
-            </motion.h1>
+          <div className="text-center lg:text-left hero-content-fade-left">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 hero-title-animate">
+                <p className="text-gray-100 mb-4">Bonjour, je suis</p>
+                <p className="gradient-text victor-name">Victor Voyer</p>
+              </h1>
 
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-2xl md:text-3xl text-blue-400 mb-4 font-medium"
-            >
-              Développeur - Intégrateur Web
-            </motion.p>
+            <p className="text-2xl md:text-3xl text-blue-400 mb-4 font-medium hero-subtitle-animate">
+              Développeur FullStack Junior
+            </p>
 
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-              className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed"
-            >
-              Motivé et adaptable, je suis passionné par l'intégration web et déterminé à créer des interfaces esthétiques et fonctionnelles. Toujours prêt à apprendre, je m'adapte rapidement aux évolutions technologiques.
-            </motion.p>
+            <p className="text-lg text-gray-300 mb-8 max-w-3xl mx-auto lg:mx-0 leading-relaxed hero-description-animate">
+              Développeur FullStack Junior, je maîtrise les technologies front-end et back-end pour créer des applications web complètes. Curieux et déterminé, je cherche constamment à perfectionner mes compétences et à contribuer à des projets innovants qui font la différence.
+            </p>
 
             {/* Buttons */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.8 }}
-              className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8"
-            >
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8 hero-buttons-animate">
               <button
                 onClick={() => document.querySelector('#projets')?.scrollIntoView({ behavior: 'smooth' })}
                 className="btn-primary"
@@ -75,15 +49,10 @@ const Hero = () => {
               >
                 Me contacter
               </button>
-            </motion.div>
+            </div>
 
             {/* Social Links */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 1 }}
-              className="flex gap-4 justify-center lg:justify-start"
-            >
+            <div className="flex gap-4 justify-center lg:justify-start hero-social-animate">
               <a
                 href="https://github.com/Victor-Voyer"
                 target="_blank"
@@ -93,7 +62,7 @@ const Hero = () => {
                 <Github className="w-6 h-6 text-gray-200" />
               </a>
               <a
-                href="https://www.linkedin.com/in/victor-voyer"
+                href="https://www.linkedin.com/in/victor-voyer/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 glass rounded-full hover:bg-white/20 transition-all duration-300 transform hover:scale-110"
@@ -106,30 +75,30 @@ const Hero = () => {
               >
                 <Mail className="w-6 h-6 text-gray-200" />
               </a>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
 
           {/* Visual Element */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="flex justify-center lg:justify-end"
-          >
+          <div className="flex justify-center lg:justify-end hero-visual-fade-right">
             <div className="relative">
               {/* Main Circle */}
-              <div className="w-80 h-80 glass-card rounded-full flex items-center justify-center relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary-500/20 to-primary-700/20 rounded-full"></div>
-                <div className="relative z-10 text-center">
-                  <div className="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden border-4 border-white/20 shadow-2xl">
-                    <img 
-                      src="/src/assets/images/profile/jiraiya.jpg" 
-                      alt="Victor Voyer" 
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <h3 className="text-2xl font-bold gradient-text">Victor Voyer</h3>
-                  <p className="text-gray-700">Développeur Web</p>
+              <div className="w-80 h-80 rounded-full flex items-center justify-center relative overflow-hidden border border-white/20 shadow-2xl">
+                {/* Background Image */}
+                <div className="absolute inset-0">
+                  <img 
+                    src="/src/assets/images/profile/avatar.png" 
+                    alt="Victor Voyer" 
+                    className="w-full h-full object-cover object-center object-top"
+                  />
+                </div>
+                
+                {/* Gradient Overlay for better text readability */}
+                <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-black/40 rounded-full"></div>
+                
+                {/* Text Content */}
+                <div className="relative z-10 text-center mt-40">
+                  <h3 className="text-2xl font-bold text-white drop-shadow-lg">Victor Voyer</h3>
+                  <p className="text-gray-200 drop-shadow-md">Développeur Web</p>
                 </div>
               </div>
 
@@ -138,24 +107,19 @@ const Hero = () => {
               <div className="absolute -bottom-4 -left-4 w-12 h-12 bg-gradient-to-br from-primary-600 to-primary-800 rounded-full animate-float" style={{ animationDelay: '1s' }}></div>
               <div className="absolute top-1/2 -left-8 w-8 h-8 bg-gradient-to-br from-primary-300 to-primary-500 rounded-full animate-float" style={{ animationDelay: '2s' }}></div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
 
       {/* Scroll Indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 1.5 }}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-      >
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 hero-scroll-animate">
         <button
-          onClick={scrollToAbout}
+          onClick={scrollToSkills}
           className="p-2 glass rounded-full hover:bg-white/20 transition-all duration-300 animate-bounce"
         >
           <ChevronDown className="w-6 h-6 text-gray-200" />
         </button>
-      </motion.div>
+      </div>
     </section>
   )
 }
