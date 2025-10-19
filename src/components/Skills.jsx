@@ -65,7 +65,7 @@ const Skills = () => {
 
         <div className="skills-category-card skills-fade-in skills-fade-in-delay-1">
           
-          <div className="skills-items-grid">
+          <div className="skills-items-container">
             {allSkills.map((skill, index) => (
               <SkillCard key={index} skill={skill} />
             ))}

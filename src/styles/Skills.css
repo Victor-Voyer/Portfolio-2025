@@ -38,7 +38,7 @@
 }
 
 .skills-container {
-  max-width: 1280px;
+  width: 65%;
   margin: 0 auto;
   padding: 0 16px;
   position: relative;
@@ -98,18 +98,19 @@
   gap: 12px;
 }
 
-.skills-items-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+.skills-items-container {
+  display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   padding: 20px 0;
+  justify-content: center;
 }
 
 .skill-card {
   background: linear-gradient(145deg, #ffffff, #f8fafc);
   border: 1px solid #e2e8f0;
   border-radius: 16px;
-  padding: 24px 20px;
+  padding: 16px 12px;
   text-align: center;
   position: relative;
   overflow: visible;
@@ -118,7 +119,7 @@
   box-shadow: 
     0 4px 6px rgba(0, 0, 0, 0.05),
     0 1px 3px rgba(0, 0, 0, 0.1);
-  min-height: 140px;
+  min-height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -151,6 +152,7 @@
   transition: all 0.3s ease;
   max-width: 48px;
   max-height: 48px;
+  filter: drop-shadow(8px 12px 8px rgba(0, 0, 0, 0.3)) drop-shadow(4px 6px 6px rgba(0, 0, 0, 0.2));
 }
 
 .skill-name {
