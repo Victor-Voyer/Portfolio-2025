@@ -1,6 +1,7 @@
 import React from 'react'
 import { Github, Linkedin, Mail, ChevronDown } from 'lucide-react'
 import '../styles/Hero.css'
+import avatarImage from '../assets/images/profile/avatar.png'
 
 const Hero = () => {
   const scrollToSkills = () => {
@@ -86,7 +87,7 @@ const Hero = () => {
                 {/* Background Image */}
                 <div className="absolute inset-0">
                   <img 
-                    src="/src/assets/images/profile/avatar.png" 
+                    src={avatarImage} 
                     alt="Victor Voyer" 
                     className="w-full h-full object-cover object-center object-top"
                   />
