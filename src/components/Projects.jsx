@@ -15,7 +15,7 @@ const Projects = () => {
       image: portfolioImage,
       technologies: ['React', 'Vite', 'Tailwind CSS'],
       github: 'https://github.com/Victor-Voyer/Portfolio-2025',
-      demo: '#',
+      demo: 'https://victor-voyer.github.io/Portfolio-2025/',
       featured: false
     },  
     {
