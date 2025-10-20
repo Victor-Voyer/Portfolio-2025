@@ -1,0 +1,58 @@
+/* Variables CSS pour les projets */
+:root {
+  /* Project Card Variables */
+  --project-card-radius: 1.5rem;
+  --project-card-padding: 1.5rem;
+  --project-card-gap: 2rem;
+  --project-image-height: 12rem;
+  --project-image-radius: 1rem;
+  
+  /* Project Shadows */
+  --project-shadow: 0 8px 32px rgba(0, 0, 0, 0.1), 0 2px 8px rgba(0, 0, 0, 0.05);
+  --project-shadow-hover: 0 25px 50px rgba(0, 0, 0, 0.15), 0 8px 20px rgba(0, 0, 0, 0.1);
+  --project-shadow-featured: 0 12px 40px rgba(var(--primary-500), 0.15), 0 4px 12px rgba(var(--primary-500), 0.1);
+  --project-shadow-featured-hover: 0 30px 60px rgba(var(--primary-500), 0.2), 0 12px 24px rgba(var(--primary-500), 0.15);
+  
+  /* Project Colors */
+  --project-bg: rgba(255, 255, 255, 0.8);
+  --project-border: rgba(255, 255, 255, 0.3);
+  --project-featured-bg: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
+  --project-featured-border: rgba(var(--primary-200), 0.5);
+  
+  /* Project Image */
+  --project-image-bg: linear-gradient(135deg, var(--primary-100), var(--accent-100));
+  
+  /* Project Links */
+  --project-link-padding: 1rem 0.75rem;
+  --project-link-radius: 0.5rem;
+  --project-link-gap: 0.4rem;
+  --project-link-primary-bg: #1e3a8a;
+  --project-link-primary-hover: #172554;
+  --project-link-secondary-bg: rgba(255, 255, 255, 0.3);
+  --project-link-secondary-hover: rgba(255, 255, 255, 0.5);
+  
+  /* Technology Tags */
+  --tech-tag-padding: 0.35rem 0.75rem;
+  --tech-tag-radius: 0.5rem;
+  --tech-tag-bg: #eef2ff;
+  --tech-tag-border: #e5e7eb;
+  
+  /* CTA */
+  --cta-max-width: 32rem;
+  --cta-padding: 2rem;
+  --cta-radius: 1.5rem;
+  --cta-title-color: #e5e7eb;
+  --cta-description-color: #cbd5e1;
+  
+  /* Buttons */
+  --btn-padding: 0.75rem 1.5rem;
+  --btn-radius: 0.5rem;
+  --btn-primary-bg: #1e3a8a;
+  --btn-primary-hover: #172554;
+  --btn-secondary-bg: rgba(255, 255, 255, 0.3);
+  --btn-secondary-hover: rgba(255, 255, 255, 0.5);
+  
+  /* Animations */
+  --project-transition: transform 0.3s ease, box-shadow 0.3s ease;
+  --link-transition: all 0.3s ease;
+}

@@ -1,0 +1,83 @@
+/* Project Call to Action Styles */
+@import '../variables.css';
+
+/* Call to Action */
+.projects-cta {
+  text-align: center;
+  margin-top: 4rem;
+  opacity: 0;
+  animation: ctaFadeIn 0.8s ease-out forwards;
+  animation-delay: 0.8s;
+}
+
+.cta-card {
+  background: transparent;
+  border: none;
+  border-radius: var(--cta-radius);
+  padding: var(--cta-padding);
+  max-width: var(--cta-max-width);
+  margin: 0 auto;
+  box-shadow: none;
+}
+
+.cta-card:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.cta-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--cta-title-color);
+  margin-bottom: 1rem;
+}
+
+.cta-description {
+  color: var(--cta-description-color);
+  margin-bottom: 1.5rem;
+}
+
+.cta-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+}
+
+@media (min-width: 640px) {
+  .cta-buttons {
+    flex-direction: row;
+  }
+}
+
+.btn-primary, .btn-secondary {
+  padding: var(--btn-padding);
+  border-radius: var(--btn-radius);
+  text-decoration: none;
+  font-weight: 500;
+  transition: var(--link-transition);
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: var(--btn-primary-bg);
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: var(--btn-primary-hover);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: var(--btn-secondary-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #1f2937;
+}
+
+.btn-secondary:hover {
+  background: var(--btn-secondary-hover);
+  transform: translateY(-2px);
+}
