@@ -24,8 +24,8 @@ const Projects = () => {
       description: 'BTCrack est une plateforme de questions-réponses dédiée aux développeurs, organisée par technologies, pour créer des tickets, obtenir de l’aide et partager des solutions claires.',
       image: btCrackImage,
       technologies: ['Symfony', 'Javascript', 'Twig'],
-      github: '#',
-      demo: '#',
+      github: 'https://github.com/Victor-Voyer/Portfolio-2025',
+      demo: 'https://btcrack.webatif.fr/tickets',
       featured: false
     },   
   ]
@@ -94,6 +94,8 @@ const Projects = () => {
                   <a
                     href={project.demo}
                     className="project-link primary"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <ExternalLink size={16} />
                     Voir le projet
