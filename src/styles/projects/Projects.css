@@ -117,7 +117,7 @@
 @media (min-width: 769px) and (max-width: 1023px) {
   .project-card {
     flex: 0 0 calc(50% - 1rem);
-    min-width: 280px;
+    min-width: 17.5rem;
     max-width: 100%;
   }
 }
@@ -125,7 +125,7 @@
 @media (min-width: 1024px) {
   .project-card {
     flex: 0 0 calc(50% - 1rem);
-    min-width: 280px;
-    max-width: 350px;
+    min-width: 17.5rem;
+    max-width: 21.875rem;
   }
 }

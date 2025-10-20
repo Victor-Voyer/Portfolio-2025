@@ -1,6 +1,6 @@
 /* ===== MAIN SKILLS SECTION STYLES ===== */
 .skills-section {
-  padding: 100px 0;
+  padding: 6.25rem 0;
   position: relative;
   overflow: hidden;
 }
@@ -8,7 +8,7 @@
 .skills-container {
   width: 90%;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 1rem;
   position: relative;
   z-index: 10;
 }
