@@ -1,0 +1,88 @@
+/* ===== SKILL CARD STYLES ===== */
+.skill-card {
+  background: linear-gradient(145deg, #ffffff, #f8fafc);
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 16px 12px;
+  text-align: center;
+  position: relative;
+  overflow: visible;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 
+    0 4px 6px rgba(0, 0, 0, 0.05),
+    0 1px 3px rgba(0, 0, 0, 0.1);
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform-origin: center center;
+}
+
+.skill-card:hover {
+  border-color: #3b82f6;
+  background: linear-gradient(145deg, #dbeafe, #ffffff);
+  box-shadow: 
+    0 10px 25px rgba(59, 130, 246, 0.15),
+    0 4px 10px rgba(0, 0, 0, 0.1);
+  transform: scale(1.1);
+}
+
+.skill-icon-container {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  gap: 8px;
+}
+
+.skill-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  transition: all 0.3s ease;
+  max-width: 40px;
+  max-height: 40px;
+  filter: drop-shadow(8px 12px 8px rgba(0, 0, 0, 0.3)) drop-shadow(4px 6px 6px rgba(0, 0, 0, 0.2));
+}
+
+.skill-icon-second {
+  width: 36px;
+  height: 36px;
+  max-width: 36px;
+  max-height: 36px;
+}
+
+.skill-name {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #000000;
+  margin: 0;
+  transition: all 0.3s ease;
+  letter-spacing: -0.01em;
+}
+
+/* Animation d'entrée pour les cartes de compétences */
+@keyframes skillCardEnter {
+  0% {
+    opacity: 0;
+    transform: translateY(50px) rotateX(-15deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) rotateX(0deg);
+  }
+}
+
+/* Animation de l'effet de survol */
+.skill-hover-effect {
+  transition: opacity 0.3s ease;
+}
+
+.skill-card:hover .skill-hover-effect {
+  opacity: 1;
+}
