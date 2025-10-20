@@ -78,11 +78,3 @@
   }
 }
 
-/* Animation de l'effet de survol */
-.skill-hover-effect {
-  transition: opacity 0.3s ease;
-}
-
-.skill-card:hover .skill-hover-effect {
-  opacity: 1;
-}

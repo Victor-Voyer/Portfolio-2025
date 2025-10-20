@@ -8,11 +8,6 @@
   animation-delay: 0.4s;
 }
 
-/* Float animation for floating elements */
-.animate-float {
-  animation: float 6s ease-in-out infinite;
-}
-
 /* Keyframes */
 @keyframes fadeInRight {
   from {
@@ -22,14 +17,5 @@
   to {
     opacity: 1;
     transform: translateX(0);
-  }
-}
-
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-20px);
   }
 }
