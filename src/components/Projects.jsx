@@ -1,6 +1,7 @@
 import React from 'react'
 import { ExternalLink, Github } from 'lucide-react'
 import portfolioImage from '../assets/images/projects/portfolio.png'
+import btCrackImage from '../assets/images/projects/btcrack.png'
 import '../styles/Projects.css'
 
 const Projects = () => {
@@ -20,23 +21,13 @@ const Projects = () => {
     {
       id: 2,
       title: 'BT Crack',
-      description: '',
-      image: '',
+      description: 'BTCrack est une plateforme de questions-réponses dédiée aux développeurs, organisée par technologies, pour créer des tickets, obtenir de l’aide et partager des solutions claires.',
+      image: btCrackImage,
       technologies: ['Symfony', 'Javascript', 'Twig'],
       github: '#',
       demo: '#',
       featured: false
-    },  
-    {
-      id: 3,
-      title: 'BT Crack',
-      description: '',
-      image: '',
-      technologies: ['Symfony', 'Javascript', 'Twig'],
-      github: '#',
-      demo: '#',
-      featured: false
-    },    
+    },   
   ]
 
   return (
