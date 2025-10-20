@@ -16,6 +16,26 @@ const Projects = () => {
       github: 'https://github.com/Victor-Voyer/Portfolio-2025',
       demo: '#',
       featured: false
+    },  
+    {
+      id: 2,
+      title: 'BT Crack',
+      description: '',
+      image: '',
+      technologies: ['Symfony', 'Javascript', 'Twig'],
+      github: '#',
+      demo: '#',
+      featured: false
+    },  
+    {
+      id: 3,
+      title: 'BT Crack',
+      description: '',
+      image: '',
+      technologies: ['Symfony', 'Javascript', 'Twig'],
+      github: '#',
+      demo: '#',
+      featured: false
     },    
   ]
 
@@ -35,8 +55,8 @@ const Projects = () => {
           </p>
         </div>
 
-        <div className="projects-grid-container">
-          <div className="projects-grid">
+        <div className="projects-flex-container">
+          <div className="projects-flex">
           {projects.map((project, index) => (
             <div
               key={project.id}
