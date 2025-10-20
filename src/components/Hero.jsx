@@ -10,14 +10,14 @@ import '../styles/hero/HeroScrollIndicator.css'
 
 const Hero = () => {
   return (
-    <section id="accueil" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section id="accueil" className="hero-section">
       {/* Background Effects */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-primary-400/20 to-primary-600/20 rounded-full blur-3xl animate-float"></div>
+      <div className="hero-background-effects">
+        <div className="hero-background-blob"></div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="hero-container">
+        <div className="hero-grid">
           <HeroContent data={heroData} />
           <HeroVisual 
             avatar={heroData.avatar}

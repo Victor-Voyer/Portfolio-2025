@@ -1,5 +1,68 @@
 /* ===== MAIN HERO SECTION STYLES ===== */
 
+/* Hero Section Layout */
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background Effects */
+.hero-background-effects {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.hero-background-blob {
+  position: absolute;
+  top: -10rem;
+  right: -10rem;
+  width: 20rem;
+  height: 20rem;
+  background: linear-gradient(to bottom right, rgba(96, 165, 250, 0.2), rgba(37, 99, 235, 0.2));
+  border-radius: 50%;
+  filter: blur(3rem);
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Hero Container */
+.hero-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  position: relative;
+  z-index: 10;
+}
+
+@media (min-width: 640px) {
+  .hero-container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-container {
+    padding: 0 2rem;
+  }
+}
+
+/* Hero Grid */
+.hero-grid {
+  display: grid;
+  gap: 3rem;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 /* Fade in from left animation */
 .hero-content-fade-left {
   opacity: 0;
@@ -16,5 +79,15 @@
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+/* Float animation for background elements */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
   }
 }
