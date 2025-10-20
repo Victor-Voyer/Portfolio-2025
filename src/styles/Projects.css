@@ -138,12 +138,12 @@
 }
 
 /* Projects Container */
-.projects-container {
+/* .projects-container {
   width: 100%; 
   margin: 0 auto;
   position: relative;
   z-index: 10;
-}
+} */
 
 @media (min-width: 640px) {
   .projects-container {
@@ -212,12 +212,7 @@
   margin: 0 auto;
 }
 
-/* Projects Flex Container */
-.projects-flex-container {
-  display: flex;
-  justify-content: center;
-}
-
+/* Projects Flex */
 .projects-flex {
   display: flex;
   flex-wrap: wrap;
@@ -228,24 +223,22 @@
 
 /* Project Card */
 .project-card {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 calc(50% - 1rem);
+  position: relative;
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 1.5rem;
   padding: 1.5rem;
-  position: relative;
   overflow: hidden;
   opacity: 0;
   animation: projectCardIn 0.6s ease-out forwards;
   animation-delay: 0.2s;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1), 0 2px 8px rgba(0, 0, 0, 0.05);
-  flex: 0 0 calc(50% - 1rem);
-  /* min-width: 280px;
-  max-width: 350px; */
   width: 100%;
-  display: flex; /* pour permettre l'ancrage des actions en bas */
-  flex-direction: column;
 }
 
 .project-card.featured {
@@ -264,12 +257,8 @@
 }
 
 /* Project Image */
-.project-image-container {
-  position: relative;
-  margin-bottom: 1.5rem;
-}
-
 .project-image {
+  position: relative;
   width: 100%;
   height: 12rem;
   background: linear-gradient(135deg, var(--primary-100), var(--accent-100));
@@ -277,7 +266,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   transition: transform 0.3s ease;
 }
 
@@ -406,17 +395,19 @@
   transform: scale(1.05);
 }
 
-/* Hover Effect Overlay */
-.project-hover-overlay {
+/* Hover Effect Overlay - Now using pseudo-element */
+.project-card::before {
+  content: '';
   position: absolute;
   inset: 0;
   background: linear-gradient(135deg, rgba(var(--primary-500), 0.05), rgba(var(--accent-500), 0.05));
   opacity: 0;
   transition: opacity 0.3s ease;
   border-radius: 1.5rem;
+  pointer-events: none;
 }
 
-.project-card:hover .project-hover-overlay {
+.project-card:hover::before {
   opacity: 1;
 }
 

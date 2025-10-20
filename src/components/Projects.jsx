@@ -32,13 +32,7 @@ const Projects = () => {
 
   return (
     <section id="projets" className="projects-section">
-      {/* Background Effects */}
-      <div className="projects-bg-effects">
-        <div className="projects-bg-circle-1"></div>
-        <div className="projects-bg-circle-2"></div>
-      </div>
-
-      <div className="projects-container">
+       <div className="projects-container">
         <div className="projects-header">
           <h2 className="projects-title">Mes Projets</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -46,20 +40,15 @@ const Projects = () => {
           </p>
         </div>
 
-        <div className="projects-flex-container">
-          <div className="projects-flex">
+        <div className="projects-flex">
           {projects.map((project, index) => (
             <div
               key={project.id}
               className={`project-card group ${project.featured ? 'featured' : ''}`}
             >
-              {/* Hover Effect */}
-              <div className="project-hover-overlay" />
               {/* Project Image */}
-              <div className="project-image-container">
-                <div className="project-image">
-                  <img src={project.image} alt={project.title} />
-                </div>
+              <div className="project-image">
+                <img src={project.image} alt={project.title} />
                 {project.featured && (
                   <div className="project-featured-badge">
                     Featured
@@ -110,10 +99,8 @@ const Projects = () => {
                 </div>
               </div>
 
-              
             </div>
           ))}
-          </div>
         </div>
 
         {/* Call to Action */}
