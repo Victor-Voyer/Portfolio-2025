@@ -7,6 +7,10 @@ const Footer = () => {
 
   return (
     <footer className="text-white py-12 relative overflow-hidden">
+      {/* Background Effects */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute -bottom-48 -left-48 w-96 h-96 bg-gradient-to-tr from-primary-500/10 to-primary-700/10 rounded-full blur-3xl"></div>
+      </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
