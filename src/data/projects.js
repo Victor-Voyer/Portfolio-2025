@@ -18,7 +18,7 @@ export const projects = [
     description: 'BTCrack est une plateforme de questions-réponses dédiée aux développeurs, organisée par technologies, pour créer des tickets, obtenir de l\'aide et partager des solutions claires.',
     image: btCrackImage,
     technologies: ['Symfony', 'Javascript', 'Twig'],
-    github: 'https://github.com/Victor-Voyer/Portfolio-2025',
+    github: 'https://github.com/Victor-Voyer/Application_tickets_bug',
     demo: 'https://btcrack.webatif.fr/tickets',
     featured: false
   },   
