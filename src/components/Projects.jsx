@@ -5,6 +5,7 @@ import '../styles/Projects.css'
 
 const Projects = () => {
 
+
   const projects = [
     {
       id: 1,
@@ -14,7 +15,7 @@ const Projects = () => {
       technologies: ['React', 'Vite', 'Tailwind CSS'],
       github: 'https://github.com/Victor-Voyer/Portfolio-2025',
       demo: '#',
-      featured: true
+      featured: false
     },    
   ]
 
@@ -29,7 +30,7 @@ const Projects = () => {
       <div className="projects-container">
         <div className="projects-header">
           <h2 className="projects-title">Mes Projets</h2>
-          <p className="projects-subtitle">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Découvrez mes projets récents qui démontrent mes compétences en développement web
           </p>
         </div>
@@ -41,6 +42,8 @@ const Projects = () => {
               key={project.id}
               className={`project-card group ${project.featured ? 'featured' : ''}`}
             >
+              {/* Hover Effect */}
+              <div className="project-hover-overlay" />
               {/* Project Image */}
               <div className="project-image-container">
                 <div className="project-image">
@@ -94,8 +97,7 @@ const Projects = () => {
                 </div>
               </div>
 
-              {/* Hover Effect */}
-              <div className="project-hover-overlay" />
+              
             </div>
           ))}
           </div>
