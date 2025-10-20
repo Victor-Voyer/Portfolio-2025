@@ -1,0 +1,56 @@
+/* Footer principal */
+.footer {
+  color: white;
+  padding: 3rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-background {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.footer-background-effect {
+  position: absolute;
+  bottom: -12rem;
+  left: -12rem;
+  width: 24rem;
+  height: 24rem;
+  background: linear-gradient(to top right, rgba(59, 130, 246, 0.1), rgba(29, 78, 216, 0.1));
+  border-radius: 50%;
+  filter: blur(48px);
+}
+
+.footer-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  position: relative;
+  z-index: 10;
+}
+
+@media (min-width: 640px) {
+  .footer-container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-container {
+    padding: 0 2rem;
+  }
+}
+
+.footer-content {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .footer-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

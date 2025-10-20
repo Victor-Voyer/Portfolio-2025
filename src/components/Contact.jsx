@@ -1,7 +1,7 @@
 import React from 'react'
 import { useForm } from '../hooks'
 import { ContactHeader, ContactInfo, ContactForm } from './contact/index.js'
-import '../assets/styles/contact/Contact.css'
+import '../assets/styles/contact/index.css'
 
 const Contact = () => {
 

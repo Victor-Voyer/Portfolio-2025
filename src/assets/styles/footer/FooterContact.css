@@ -1,0 +1,23 @@
+/* Footer Contact */
+.footer-contact {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .footer-contact {
+    text-align: right;
+  }
+}
+
+.footer-contact-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.footer-contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: #d1d5db;
+}

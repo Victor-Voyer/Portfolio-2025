@@ -1,0 +1,30 @@
+/* Footer Navigation */
+.footer-navigation {
+  text-align: center;
+}
+
+.footer-navigation-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.footer-navigation-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-navigation-link {
+  color: #d1d5db;
+  transition: color 0.3s ease;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.footer-navigation-link:hover {
+  color: white;
+}
