@@ -1,0 +1,19 @@
+/* ===== CONTACT HEADER ANIMATIONS ===== */
+
+/* Animation pour le header de contact */
+@keyframes contactHeaderSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Classes d'animation */
+.contact-header {
+  animation: contactHeaderSlideUp 0.8s ease-out forwards;
+  opacity: 0;
+}

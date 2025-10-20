@@ -1,10 +1,10 @@
 import React from 'react'
 import { allSkills } from '../data/skills'
 import { SkillTitle, SkillCategory } from './skills/index.js'
-import '../styles/skills/Skills.css'
-import '../styles/skills/SkillTitle.css'
-import '../styles/skills/SkillCategory.css'
-import '../styles/skills/SkillCard.css'
+import '../assets/styles/skills/Skills.css'
+import '../assets/styles/skills/SkillTitle.css'
+import '../assets/styles/skills/SkillCategory.css'
+import '../assets/styles/skills/SkillCard.css'
 
 const Skills = () => {
   return (

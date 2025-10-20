@@ -1,0 +1,61 @@
+/* ===== CONTACT INFO ANIMATIONS ===== */
+
+/* Animation pour la section info de contact */
+@keyframes contactInfoSlideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Animation pour les éléments de contact info */
+@keyframes contactInfoSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation pour les liens sociaux */
+@keyframes socialLinkScaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Classes d'animation */
+.contact-info-section {
+  animation: contactInfoSlideLeft 0.8s ease-out forwards;
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+
+.contact-info-item {
+  animation: contactInfoSlideIn 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+.contact-info-item:nth-child(1) { animation-delay: 0.4s; }
+.contact-info-item:nth-child(2) { animation-delay: 0.5s; }
+.contact-info-item:nth-child(3) { animation-delay: 0.6s; }
+
+.social-link {
+  animation: socialLinkScaleIn 0.5s ease-out forwards;
+  opacity: 0;
+}
+
+.social-link:nth-child(1) { animation-delay: 0.8s; }
+.social-link:nth-child(2) { animation-delay: 0.9s; }

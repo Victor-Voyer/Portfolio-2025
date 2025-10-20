@@ -1,18 +1,11 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { Menu, X } from 'lucide-react'
 import logoImage from '../assets/images/logo.png'
+import { useScroll } from '../hooks'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [scrolled, setScrolled] = useState(false)
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50)
-    }
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+  const scrolled = useScroll(50)
 
   const navItems = [
     { name: 'Accueil', href: '#accueil' },

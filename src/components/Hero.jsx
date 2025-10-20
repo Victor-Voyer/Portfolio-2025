@@ -1,12 +1,12 @@
 import React from 'react'
 import { heroData } from '../data/hero'
 import { HeroContent, HeroVisual, HeroScrollIndicator } from './hero/index.js'
-import '../styles/hero/Hero.css'
-import '../styles/hero/HeroTitle.css'
-import '../styles/hero/HeroButtons.css'
-import '../styles/hero/HeroSocialLinks.css'
-import '../styles/hero/HeroVisual.css'
-import '../styles/hero/HeroScrollIndicator.css'
+import '../assets/styles/hero/Hero.css'
+import '../assets/styles/hero/HeroTitle.css'
+import '../assets/styles/hero/HeroButtons.css'
+import '../assets/styles/hero/HeroSocialLinks.css'
+import '../assets/styles/hero/HeroVisual.css'
+import '../assets/styles/hero/HeroScrollIndicator.css'
 
 const Hero = () => {
   return (

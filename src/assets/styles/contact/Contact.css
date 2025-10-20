@@ -1,0 +1,42 @@
+/* ===== CONTACT SECTION STYLES ===== */
+
+/* Section principale */
+.contact-section {
+  padding: 5rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Container principal */
+.contact-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  position: relative;
+  z-index: 10;
+}
+
+/* Responsive padding */
+@media (min-width: 640px) {
+  .contact-container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact-container {
+    padding: 0 2rem;
+  }
+}
+
+/* Grid layout */
+.contact-grid {
+  display: grid;
+  gap: 3rem;
+}
+
+@media (min-width: 1024px) {
+  .contact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
