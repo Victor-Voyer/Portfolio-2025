@@ -1,4 +1,5 @@
 import React from 'react'
+import avatarImg from '../assets/images/profile/avatar.png'
 import { Github, Linkedin, Mail, ChevronDown } from 'lucide-react'
 import '../styles/Hero.css'
 
@@ -86,7 +87,7 @@ const Hero = () => {
                 {/* Background Image */}
                 <div className="absolute inset-0">
                   <img 
-                    src="/src/assets/images/profile/avatar.png" 
+                    src={avatarImg} 
                     alt="Victor Voyer" 
                     className="w-full h-full object-cover object-center object-top"
                   />
