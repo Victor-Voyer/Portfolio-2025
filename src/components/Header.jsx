@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
+import logoImage from '../assets/images/logo.png'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -37,7 +38,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <div className="text-2xl font-bold gradient-text">
-              VV
+              <img src={logoImage} alt="Logo" className="w-24" />
             </div>
           </div>
 
