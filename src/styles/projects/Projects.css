@@ -1,7 +1,7 @@
 /* Projects Section Styles */
-@import './variables.css';
-@import './projects/ProjectCard.css';
-@import './projects/ProjectCTA.css';
+@import '../variables.css';
+@import './ProjectCard.css';
+@import './ProjectCTA.css';
 
 /* Background floating animation */
 @keyframes float {

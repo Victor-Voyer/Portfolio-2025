@@ -1,7 +1,7 @@
 import React from 'react'
 import { ProjectCard, ProjectCallToAction } from './projects/index'
 import { projects } from '../data/projects'
-import '../styles/Projects.css'
+import '../styles/projects/Projects.css'
 
 const Projects = () => {
   return (

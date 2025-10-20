@@ -1,0 +1,6 @@
+export { default as HeroContent } from './HeroContent'
+export { default as HeroTitle } from './HeroTitle'
+export { default as HeroButtons } from './HeroButtons'
+export { default as HeroSocialLinks } from './HeroSocialLinks'
+export { default as HeroVisual } from './HeroVisual'
+export { default as HeroScrollIndicator } from './HeroScrollIndicator'

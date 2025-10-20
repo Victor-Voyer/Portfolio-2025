@@ -1,0 +1,20 @@
+/* ===== MAIN HERO SECTION STYLES ===== */
+
+/* Fade in from left animation */
+.hero-content-fade-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: fadeInLeft 0.8s ease forwards;
+}
+
+/* Keyframes */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
