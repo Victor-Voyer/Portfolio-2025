@@ -4,9 +4,7 @@ import { motion } from 'framer-motion'
 const FooterNavigation = () => {
   const navigationLinks = [
     { name: 'Accueil', href: '#accueil' },
-    { name: 'À propos', href: '#apropos' },
     { name: 'Compétences', href: '#competences' },
-    { name: 'Parcours', href: '#parcours' },
     { name: 'Projets', href: '#projets' },
     { name: 'Contact', href: '#contact' }
   ]
