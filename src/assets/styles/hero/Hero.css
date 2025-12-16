@@ -89,6 +89,25 @@
   }
 }
 
+/* Ordre des éléments - Photo en premier sur mobile */
+.hero-content-fade-left {
+  order: 2;
+}
+
+.hero-visual-fade-right {
+  order: 1;
+}
+
+@media (min-width: 1024px) {
+  .hero-content-fade-left {
+    order: 1;
+  }
+  
+  .hero-visual-fade-right {
+    order: 2;
+  }
+}
+
 /* Fade in from left animation */
 .hero-content-fade-left {
   opacity: 0;
