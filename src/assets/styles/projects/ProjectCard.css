@@ -7,7 +7,6 @@
   flex-direction: column;
   position: relative;
   background: var(--project-bg);
-  backdrop-filter: blur(20px);
   border: 1px solid var(--project-border);
   border-radius: var(--project-card-radius);
   padding: 0.875rem;
