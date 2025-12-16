@@ -1,9 +1,21 @@
 /* Footer principal */
 .footer {
   color: white;
-  padding: 3rem 0;
+  padding: 2rem 0;
   position: relative;
   overflow: hidden;
+}
+
+@media (min-width: 640px) {
+  .footer {
+    padding: 2.5rem 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    padding: 3rem 0;
+  }
 }
 
 .footer-background {
@@ -47,6 +59,14 @@
   display: grid;
   gap: 2rem;
   margin-bottom: 2rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
 }
 
 @media (min-width: 768px) {

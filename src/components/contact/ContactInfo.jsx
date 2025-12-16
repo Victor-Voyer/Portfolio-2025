@@ -41,10 +41,10 @@ const ContactInfo = () => {
 
   return (
     <div className="contact-info-section">
-      <div className="glass-card rounded-3xl p-8 h-full">
-        <h3 className="text-2xl font-bold text-gray-900 mb-8">Informations de contact</h3>
+      <div className="glass-card rounded-3xl p-4 sm:p-6 md:p-8 h-full">
+        <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 sm:mb-8">Informations de contact</h3>
         
-        <div className="space-y-6 mb-8">
+        <div className="space-y-4 sm:space-y-6 mb-6 sm:mb-8">
           {contactInfo.map((info, index) => (
             <div
               key={info.label}

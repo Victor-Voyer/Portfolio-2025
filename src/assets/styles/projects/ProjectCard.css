@@ -11,13 +11,25 @@
   backdrop-filter: blur(20px);
   border: 1px solid var(--project-border);
   border-radius: var(--project-card-radius);
-  padding: var(--project-card-padding);
+  padding: 1rem;
   overflow: hidden;
   opacity: 1;
   transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
   box-shadow: var(--project-shadow);
   width: 100%;
   transform: scale(1);
+}
+
+@media (min-width: 640px) {
+  .project-card {
+    padding: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .project-card {
+    padding: var(--project-card-padding);
+  }
 }
 
 .project-card:hover {
@@ -82,15 +94,28 @@
 }
 
 .project-title {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 700;
   color: #1f2937;
   transition: color 0.3s ease;
 }
 
+@media (min-width: 640px) {
+  .project-title {
+    font-size: 1.25rem;
+  }
+}
+
 .project-description {
   color: #374151;
   line-height: 1.6;
+  font-size: 0.875rem;
+}
+
+@media (min-width: 640px) {
+  .project-description {
+    font-size: 1rem;
+  }
 }
 
 /* Technologies */

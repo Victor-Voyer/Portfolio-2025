@@ -1,0 +1,30 @@
+/* ===== TYPEWRITER BUTTON STYLES ===== */
+
+.typewriter-button {
+  position: relative;
+  min-height: 3rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.typewriter-button .cursor {
+  display: inline-block;
+  margin-left: 2px;
+  animation: blink 1s infinite;
+  color: currentColor;
+}
+
+.typewriter-button.typing .cursor {
+  opacity: 1;
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
+

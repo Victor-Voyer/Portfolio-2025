@@ -14,11 +14,11 @@ const ContactForm = ({
 }) => {
   return (
     <div className="contact-form-section">
-      <div className="glass-card rounded-3xl p-8">
-        <h3 className="text-2xl font-bold text-gray-900 mb-8">Envoyez-moi un message</h3>
+      <div className="glass-card rounded-3xl p-4 sm:p-6 md:p-8">
+        <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 sm:mb-8">Envoyez-moi un message</h3>
         
-        <form onSubmit={handleSubmit} className="space-y-6">
-          <div className="grid md:grid-cols-2 gap-6">
+        <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
+          <div className="grid md:grid-cols-2 gap-4 sm:gap-6">
             <FormInput
               type="text"
               name="name"

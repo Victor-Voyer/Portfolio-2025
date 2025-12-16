@@ -4,30 +4,56 @@
   backdrop-filter: blur(1.25rem);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 2rem;
-  padding: 2.5rem;
+  padding: 1.5rem;
   box-shadow: 
     0 20px 40px rgba(0, 0, 0, 0.1),
     0 8px 16px rgba(0, 0, 0, 0.05),
     inset 0 1px 0 rgba(255, 255, 255, 0.8);
   transition: all 0.4s ease;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
+}
+
+@media (min-width: 640px) {
+  .skills-category-card {
+    padding: 2rem;
+    width: 95%;
+  }
+}
+
+@media (min-width: 768px) {
+  .skills-category-card {
+    padding: 2.5rem;
+    width: 90%;
+  }
 }
 
 .skills-items-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
-  padding: 1.25rem 0;
+  gap: 1rem;
+  padding: 1rem 0;
   justify-content: center;
   width: 100%;
   margin: 0 auto;
 }
 
+@media (min-width: 640px) {
+  .skills-items-container {
+    gap: 1.5rem;
+    padding: 1.25rem 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .skills-items-container {
+    gap: 2rem;
+  }
+}
+
 /* ===== RESPONSIVE DESIGN ===== */
 /* Media query pour MacBook Air M2 14 pouces et laptops similaires */
 @media screen and (min-width: 1024px) and (max-width: 1600px) {
-
   .skills-category-card {
     width: 100%;
   }
