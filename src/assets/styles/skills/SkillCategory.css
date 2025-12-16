@@ -54,20 +54,35 @@
   }
 }
 
-/* Desktop - 4 colonnes */
-@media (min-width: 1024px) and (max-width: 1279px) {
+/* Desktop - 2 lignes avec centrage de la deuxième ligne */
+@media (min-width: 1024px) {
   .skills-items-container {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
     padding: 1rem 0;
+    justify-content: center;
+    align-items: center;
   }
-}
-
-/* Large Desktop - 5 colonnes */
-@media (min-width: 1280px) {
+  
+  /* Calculer la largeur pour avoir environ 7 éléments par ligne (2 lignes pour 14 éléments) */
+  /* Largeur d'une carte (~140px) + gap (2rem = 32px) = ~172px par élément */
+  /* Pour 7 éléments: 7 * 172px = ~1204px */
   .skills-items-container {
-    grid-template-columns: repeat(5, 1fr);
-    gap: 1.5rem;
-    padding: 1.25rem 0;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Sur les très grands écrans, permettre 8 éléments par ligne */
+  @media (min-width: 1400px) {
+    .skills-items-container {
+      max-width: 1400px;
+    }
+  }
+  
+  /* S'assurer que les cartes gardent leur taille */
+  .skills-items-container .skill-card {
+    flex: 0 0 auto;
+    width: auto;
   }
 }
