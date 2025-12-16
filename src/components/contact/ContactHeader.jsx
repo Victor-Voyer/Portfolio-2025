@@ -3,9 +3,9 @@ import '../../assets/styles/contact/ContactHeader.css'
 
 const ContactHeader = () => {
   return (
-    <div className="contact-header text-center mb-8 sm:mb-12 md:mb-16 px-4 sm:px-0">
-      <h2 className="section-title">Contact</h2>
-      <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+    <div className="contact-header text-center mb-6 sm:mb-8 md:mb-12 px-4 sm:px-0 w-full box-border">
+      <h2 className="section-title break-words">Contact</h2>
+      <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-3xl mx-auto px-2 sm:px-0 break-words">
         N'hésitez pas à me contacter pour discuter de nouvelles opportunités et projets passionnants
       </p>
     </div>

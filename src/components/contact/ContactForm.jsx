@@ -13,12 +13,12 @@ const ContactForm = ({
   handleSubmit 
 }) => {
   return (
-    <div className="contact-form-section">
-      <div className="glass-card rounded-3xl p-4 sm:p-6 md:p-8">
-        <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 sm:mb-8">Envoyez-moi un message</h3>
+    <div className="contact-form-section w-full">
+      <div className="glass-card rounded-2xl p-4 sm:p-5 md:p-6 w-full h-full box-border overflow-hidden flex flex-col">
+        <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-4 sm:mb-6 break-words">Envoyez-moi un message</h3>
         
-        <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
-          <div className="grid md:grid-cols-2 gap-4 sm:gap-6">
+        <form onSubmit={handleSubmit} className="space-y-3 sm:space-y-4 w-full flex-1 flex flex-col">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
             <FormInput
               type="text"
               name="name"
@@ -76,17 +76,17 @@ const ContactForm = ({
           <button
             type="submit"
             disabled={isSubmitting}
-            className="submit-button w-full btn-primary flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+            className="submit-button w-full btn-primary flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed text-sm sm:text-base py-2.5 sm:py-3 mt-auto"
           >
             {isSubmitting ? (
               <>
-                <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-                Envoi en cours...
+                <div className="w-4 h-4 sm:w-5 sm:h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                <span>Envoi en cours...</span>
               </>
             ) : (
               <>
-                <Send className="w-5 h-5" />
-                Envoyer le message
+                <Send className="w-4 h-4 sm:w-5 sm:h-5" />
+                <span>Envoyer le message</span>
               </>
             )}
           </button>

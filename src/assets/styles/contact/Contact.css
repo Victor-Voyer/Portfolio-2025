@@ -2,14 +2,15 @@
 
 /* Section principale */
 .contact-section {
-  padding: 3rem 0;
+  padding: 2.5rem 0;
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 
 @media (min-width: 640px) {
   .contact-section {
-    padding: 4rem 0;
+    padding: 3.5rem 0;
   }
 }
 
@@ -22,10 +23,12 @@
 /* Container principal */
 .contact-container {
   max-width: 80rem;
+  width: 100%;
   margin: 0 auto;
   padding: 0 1rem;
   position: relative;
   z-index: 10;
+  box-sizing: border-box;
 }
 
 /* Responsive padding */
@@ -44,24 +47,39 @@
 /* Grid layout */
 .contact-grid {
   display: grid;
-  gap: 2rem;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 @media (min-width: 640px) {
   .contact-grid {
-    gap: 2.5rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .contact-grid {
-    gap: 3rem;
+    gap: 2rem;
   }
 }
 
 @media (min-width: 1024px) {
   .contact-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
+    gap: 2.5rem;
+    align-items: stretch;
+  }
+}
+
+/* Assurer que les sections enfants prennent toute la hauteur */
+@media (min-width: 1024px) {
+  .contact-info-section,
+  .contact-form-section {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-info-section > div,
+  .contact-form-section > div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
   }
 }

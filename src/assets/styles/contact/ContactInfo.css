@@ -41,11 +41,16 @@
   animation: contactInfoSlideLeft 0.8s ease-out forwards;
   animation-delay: 0.2s;
   opacity: 0;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .contact-info-item {
   animation: contactInfoSlideIn 0.6s ease-out forwards;
   opacity: 0;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .contact-info-item:nth-child(1) { animation-delay: 0.4s; }
@@ -55,6 +60,7 @@
 .social-link {
   animation: socialLinkScaleIn 0.5s ease-out forwards;
   opacity: 0;
+  flex-shrink: 0;
 }
 
 .social-link:nth-child(1) { animation-delay: 0.8s; }

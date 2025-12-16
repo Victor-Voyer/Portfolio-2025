@@ -1,7 +1,21 @@
 /* ===== SKILL TITLE STYLES ===== */
 .skills-title-container {
   text-align: center;
-  margin-bottom: 3.125rem;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .skills-title-container {
+    margin-bottom: 2.5rem;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .skills-title-container {
+    margin-bottom: 3.125rem;
+  }
 }
 
 .skills-title {

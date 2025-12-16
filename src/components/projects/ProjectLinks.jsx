@@ -21,13 +21,13 @@ const ProjectLinks = ({ project }) => {
       <ProjectLink 
         href={project.demo} 
         type="primary" 
-        icon={<ExternalLink size={16} />}
+        icon={<ExternalLink size={12} />}
         text="Voir le projet"
       />
       <ProjectLink 
         href={project.github} 
         type="secondary" 
-        icon={<Github size={16} />}
+        icon={<Github size={12} />}
         text="Code source"
       />
     </div>

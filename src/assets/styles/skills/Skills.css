@@ -1,23 +1,24 @@
 /* ===== MAIN SKILLS SECTION STYLES ===== */
 .skills-section {
-  padding: 3rem 0;
+  padding: 2.5rem 0;
   position: relative;
   overflow: hidden;
 }
 
 @media (min-width: 640px) {
   .skills-section {
-    padding: 4rem 0;
+    padding: 3.5rem 0;
   }
 }
 
 @media (min-width: 1024px) {
   .skills-section {
-    padding: 6.25rem 0;
+    padding: 5rem 0;
   }
 }
 
 .skills-container {
+  max-width: 80rem;
   width: 100%;
   margin: 0 auto;
   padding: 0 1rem;
@@ -27,14 +28,7 @@
 
 @media (min-width: 640px) {
   .skills-container {
-    width: 95%;
     padding: 0 1.5rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .skills-container {
-    width: 90%;
   }
 }
 

@@ -36,10 +36,20 @@
   animation: contactFormSlideRight 0.8s ease-out forwards;
   animation-delay: 0.4s;
   opacity: 0;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.contact-form-section form {
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .submit-button {
   transition: transform 0.2s ease;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .submit-button:hover {
@@ -48,4 +58,11 @@
 
 .submit-button:active {
   animation: buttonTap 0.1s ease forwards;
+}
+
+/* Assurer que les inputs ne débordent pas */
+.contact-form-section input,
+.contact-form-section textarea {
+  max-width: 100%;
+  box-sizing: border-box;
 }
